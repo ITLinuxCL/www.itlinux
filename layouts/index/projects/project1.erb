@@ -1,0 +1,56 @@
+<div>
+	<div class="portfolio-item img-thumbnail">
+		<a class="thumb-info lightbox" href="#popupProject1" data-plugin-options='{"type":"inline", preloader: false}'>
+			<img alt="" class="img-responsive" src="img/projects/project-1.png">
+			<span class="thumb-info-title">
+				<span class="thumb-info-inner">Plataforma Web</span>
+				<span class="thumb-info-type">TVN</span>
+			</span>
+			<span class="thumb-info-action">
+				<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+			</span>
+		</a>
+	</div>
+</div>
+
+<div id="popupProject1" class="popup-inline-content">
+	<h2>Mejorar rendimiento de plataforma web</h2>
+
+	<div class="row">
+		<div class="col-md-6">
+
+			<img class="img-thumbnail img-responsive" alt="" src="/img/projects/project-1.png">
+
+		</div>
+
+		<div class="col-md-6">
+
+			<h4>Objetivos del Proyecto</h4>
+			<p>
+				TVN necesitaba mejorar los tiempos de respuesta y disponibilidad de sus sitios web, que a lo largo del tiempo se han convertido en el segundo medio de interacción de sus televidentes, y por lo tanto en una importante fuente de generación de ingresos.
+			</p>
+			
+			<h4 class="push-top">Desarrollo</h4>
+			<p>
+				Para cumplir con los objetivos del proyecto realizamos un trabajo de levantamiento de la de plataforma web en funcionamiento, lo que nos permitió entender los puntos de contención y de falla que deberíamos resolver.
+			</p>
+			<p>Con la información obtenida realizamos el diseño de la nueva plataforma para la cual consideramos el uso de tres productos Open Source que ayudarían a mejorar el rendimiento y operación de los sitios web:</p>
+			<ul class="list icons list-unstyled">
+				<li><strong>Varnish Cache</strong>, que funciona como un proxy reverso guardando en cache las solicitudes con lo que liberamos a los servidores para que hagan su trabajo.</li>
+				<li><strong>HAProxy</strong>, software de balanceo de carga que maneja varios niveles de balanceo, que nos permitió redireccionar el tráfico a los servidores con menos carga.</li>
+				<li><strong>NGINX</strong>, servidor web de alto desempeño que utilizamos para servir todo el contenido estático como son imágenes, hojas de estilo y archivos javascript, entre otros.</li>
+			</ul>
+
+			<h4 class="push-top">Resultado</h4>
+			<p>
+				Con los trabajos desarrollados en este proyecto, TVN logró estabilizar su plataforma web y responder exitosamente a eventos noticiosos que generaban altos "peaks" de tráfico, lo que les permite ofrecer un producto de alta calidad a sus clientes y usuarios.
+			</p>
+			<p>
+				TVN también decidió contar con nuestro <a href="/soporte.html"><strong>Servicio de Soporte</strong></a> ya que comprende que la demanda de sus usuarios y clientes va creciendo y que la mejor forma de responder a ella es <strong>contar con un socio experto</strong> en la materia.
+			</p>
+			
+			<%= render "index/projects/contact_us"%>
+
+		</div>
+	</div>
+</div>

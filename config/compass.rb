@@ -1,0 +1,11 @@
+require 'compass_twitter_bootstrap'
+
+http_path    = "/"
+project_path = "."
+css_dir      = "output/stylesheets"
+sass_dir     = "content/stylesheets"
+images_dir   = "output/images"
+#output_style = :compressed
+sass_options = {
+  :syntax => :scss
+}

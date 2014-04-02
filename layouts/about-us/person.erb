@@ -1,0 +1,29 @@
+<li class="col-md-3">
+	<div class="team-item thumbnail">
+		<a href="" class="thumb-info team">
+			<% if picture.nil? %>
+				<img alt="" height="270" src="/img/team/team-6.jpg">
+			<% else %>
+				<img alt="" height="270" src="/img/team/<%= picture %>">
+			<% end %>
+			<span class="thumb-info-title">
+				<span class="thumb-info-inner"><%= name %></span>
+				<span class="thumb-info-type"><%= title %></span>
+			</span>
+		</a>
+		<span class="thumb-info-caption">
+			<p><%= description %></p>
+			<span class="thumb-info-social-icons">
+				<% unless facebook.nil? %>
+					<a rel="tooltip" data-placement="bottom" target="_blank" href="<%= facebook %>" data-original-title="Facebook"><i class="icon icon-facebook"></i><span>Facebook</span></a>
+				<% end %>
+				<% unless twitter.nil? %>
+				<a rel="tooltip" data-placement="bottom" href="<%= twitter %>" data-original-title="Twitter"><i class="icon icon-twitter"></i><span>Twitter</span></a>
+				<% end %>
+				<% unless linkedin.nil? %>
+				<a rel="tooltip" data-placement="bottom" href="<%= linkedin %>" data-original-title="Linkedin"><i class="icon icon-linkedin"></i><span>Linkedin</span></a>
+				<% end %>
+			</span>
+		</span>
+	</div>
+</li>

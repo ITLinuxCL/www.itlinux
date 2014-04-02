@@ -1,0 +1,97 @@
+<div class="container">
+	<div class="row" id="features">
+		<div class="col-md-8">
+			<h2 data-appear-animation="fadeInLeft">Nuestros <strong>Servicios</strong></h2>
+			<div class="row">
+				<div class="col-md-6">
+					
+					<%= render "index/feature", 
+						:icon => "group",
+						:title => "Soporte y Mantención",
+						:description => "Minizamos los eventos que afectan la continuidad de su negocio y los tiempos de solución cuando éstos ocurren."
+					%>
+					
+					<%= render "index/feature", 
+						:icon => "dashboard",
+						:title => "High Performance Web",
+						:description => "Ayudamos en el diseño y mejoras de plataformas web que deben operar con <strong>miles de visitantes por segundo</strong>."
+					%>
+					
+					
+					<%= render "index/feature", 
+						:icon => "cloud",
+						:title => "Cloud Computing",
+						:description => "Usamos el poder de <strong>Open Stack</strong> y <strong>Puppet</strong> para generar plataformas elásticas y autónomas."
+					%>
+					
+				</div>
+				<div class="col-md-6">
+					<%= render "index/feature", 
+						:icon => "envelope",
+						:title => "Correo en la nube",
+						:description => "<a href='http://www.zbox.cl'>www.ZBOX.cl</a> es el servicio de hosting de correo Zimbra Collaboration Suite número uno en Chile."
+					%>
+					
+					<%= render "index/feature", 
+						:icon => "usd",
+						:title => "Sistemas POS para Retail",
+						:description => "Miles de POS de experiencia en el desarrollo de plataformas de gran escala utilizando SuSE Linux Point of Service."
+					%>
+					
+					<%= render "index/feature", 
+						:icon => "pencil",
+						:title => "Educación",
+						:description => "En nuestra <a href='http://itlinux.zendesk.com/hc/'>Base de Conocimientos</a> y nuestro <a href='http://blog.itlinux.cl'>Blog</a> puedes encontrar cientos de manuales y guías para mejorar tus habilidades de administración."
+					%>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h2 data-appear-animation="fadeInRight">trabajamos con:</h2>
+
+			<div class="panel-group" id="accordion">
+				
+				<%= render "index/product", 
+					:icon => "icon-comment",
+					:number => 1,
+					:expanded => "in",
+					:title => "Zimbra Collaboration Suite",
+					:more_info =>  link_to('Zimbra.com', 'http://www.zimbra.com/'),
+					:description => "Zimbra conecta a las personas y su información a través de un sistema unificado de colaboración que incluye correo, calendarios, archivos compartidos, comunidades sociales y más. "
+				%>
+				
+				<%= render "index/product", 
+					:icon => "icon-comment",
+					:number => 2,
+					:expanded => "",
+					:title => "Red Hat Enterprise Linux",
+					:more_info => link_to('RedHat.com', 'http://cl.redhat.com/products/enterprise-linux/'),
+					:description => "Utilice el estándar de Red Hat® Enterprise Linux® y saque el máximo partido a un sistema operativo open source de tipo empresarial de forma flexible, eficiente y con control."
+				%>
+				
+				<%= render "index/product", 
+					:icon => "icon-comment",
+					:number => 3,
+					:expanded => "",
+					:title => "Varnish Cache",
+					:more_info => link_to('Varnish-Cache.org', 'https://www.varnish-cache.org/about'),
+					:description => "Varnish Cache es un acelerador de Aplicaciones y Sitios Web. Se instala en frente de tu plataforma web e inmediatamente mejora el tiempo de respuesta por un factor entre 300X y 1000X."
+				%>
+				
+				<%= render "index/product", 
+					:icon => "icon-comment",
+					:number => 4,
+					:expanded => "",
+					:title => "Puppet",
+					:more_info => link_to('PuppetLabs.com', 'https://puppetlabs.com/puppet/what-is-puppet'),
+					:description => "Puppet es un software de automatización IT que te da el poder de automatizar fácilmente tareas repetitivas, instalar rápidamente aplicaciones críticas, y manejar pro-activamente tu plafatorma, local y/o en la nube."
+				%>
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+

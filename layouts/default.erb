@@ -1,0 +1,25 @@
+<!DOCTYPE HTML><!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="es"><!--<![endif]-->
+	
+  <%= render "head" %>
+	
+  <body>
+  	<div class="body">
+		<%= render "header" %>
+
+		<div role="main" class="main">
+			<div id="content" class="content full">
+				<%= yield %>
+			</div>
+		</div>
+		
+		<%= render "footer" %>
+		
+	</div>
+	
+	<%= render "javascripts_libs" %>
+    
+  </body>
+</html>

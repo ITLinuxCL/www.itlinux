@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4 class="panel-title">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= number %>">
+				<i class="icon icon-<%= icon %>"></i>
+				<%= title %>
+			</a>
+		</h4>
+	</div>
+	<div id="collapse<%= number %>" class="accordion-body collapse <%= expanded %>">
+		<div class="panel-body">
+			<%= description %> Más información: <%= more_info %>
+		</div>
+	</div>
+</div>

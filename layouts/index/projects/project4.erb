@@ -1,0 +1,68 @@
+<div>
+	<div class="portfolio-item img-thumbnail">
+		<a class="thumb-info lightbox" href="#popupProject4" data-plugin-options='{"type":"inline", preloader: false}'>
+			<img alt="" class="img-responsive" src="/img/projects/project-4.png">
+			<span class="thumb-info-title">
+				<span class="thumb-info-inner">Migración a Zimbra CS</span>
+				<span class="thumb-info-type">Armada de Chile</span>
+			</span>
+			<span class="thumb-info-action">
+				<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon icon-link"></i></span>
+			</span>
+		</a>
+	</div>
+</div>
+
+<div id="popupProject4" class="popup-inline-content">
+	<h2>Renovación de Plataforma de Correo</h2>
+
+	<div class="row">
+		<div class="col-md-6">
+
+			<img class="img-thumbnail img-responsive" alt="" src="/img/projects/project-4.png">
+
+		</div>
+
+		<div class="col-md-6">
+
+			<h4>Descripción del Proyecto</h4>
+			<p>
+				Migrar una plataforma de correo que ha funcionado durante 7 años y en la cual operan <strong>más de 8 mil usuarios activos</strong> no es cosa fácil, sobre todo si se consideran los siguientes requisitos:</p>
+
+			<ul class="list icons list-unstyled">
+				<li>
+					<strong>Migración de Postfix/Dovecot a Zimbra CS 8</strong>, conservando los mensajes de correo existentes en el servidor y migrando los contactos creados en el antiquísimo webmail Squirrelmail (nuestros respetos)
+				</li>
+				<li>
+					<strong>Actualización a Sistema Operativo de 64 bits</strong>, desde un sistema operativo con 7 años de antigüedad.
+				</li>
+				<li>
+					<strong>Migración transparentes para los usuarios</strong>, salvo el cambio para mejor del cliente web, la migración no debía producir modificación alguna de los clientes de correo MS Outlook o móviles. Para esto era necesario <strong>convervar las contraseñas</strong>.
+				</li>
+			</ul>
+			
+			<p>
+				Por eso cuando La Armada de Chile se propuso este desafío recurrió a las mismas personas que habían implementado la plataforma que había funcionado por los últimos 7 años.
+			</p>
+			
+			<h4>Desarrollo del Proyecto</h4>
+			<p>
+				El haber migrado más de 50 mil casillas de correo hacia Zimbra Collaboration Suite desde diferentes sistemas como son Linux, MS Exchange, Lotus, etc. nos ha permitido desarrollar estrategias que disminuyen los tiempos de trabajo y llevan la interrupción del servicio casi a 0.
+			</p>
+			<p>
+				Para este caso en particular y debido a la cantidad creciente de usuarios, se decidió realizar la implementación de Zimbra Collaboration Suite en un ambiente de múltiples nodos, lo cual permite el <strong>escalamiento horizontal</strong> de la plataforma y dotarla de <strong>Alta Disponibilidad</strong>.
+			</p>
+			<p>
+				Para realizar los trabajos nos tomamos un par de días para hacer el levantamiento y una semana para dejar la nueva plataforma instalada y probada. El cambio de plataforma se realizó en una ventana de tiempo acordada y <strong>la interrupción de los servicios no duró más de 5 minutos</strong>.
+			</p>
+			
+			<h4>Resultados</h4>
+			<p>
+				El proyecto resultó en un exito rotundo, entregando a La Armada de Chile una plataforma de correo electrónico y colaboración de última generación que puede ser usada por muchos años más. Los usuarios al día siguiente de la migración no se enteraron del cambio hasta que ingresaron al mejorado cliente web o se les comunicó sobre los trabajos.
+			</p>
+			
+			<%= render "index/projects/contact_us"%>
+			
+		</div>
+	</div>
+</div>

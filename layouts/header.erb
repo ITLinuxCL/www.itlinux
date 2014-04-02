@@ -1,0 +1,25 @@
+<header>
+	<div class="container">
+		<h1 class="logo">
+			<a href="/index.html">
+				<img alt="Logo IT Linux" src="/img/logoITLinux.png">
+			</a>
+		</h1>
+		
+		<%= render "header/search" %>
+		
+		<%= render "header/top_contact" %>
+		
+		<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+			<i class="icon icon-bars"></i>
+		</button>
+	</div>
+	<div class="navbar-collapse nav-main-collapse collapse">
+		<div class="container">
+			
+			<%= render "header/social" %>
+			
+			<%= render "header/menu_bar" %>
+		</div>
+	</div>
+</header>

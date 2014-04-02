@@ -1,0 +1,51 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    capistrano (3.1.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (~> 1.3)
+    chunky_png (1.2.9)
+    colored (1.2)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass_twitter_bootstrap (2.3.1)
+      compass
+    cri (2.4.1)
+      colored (>= 1.2)
+    fssm (0.2.10)
+    htmlentities (4.3.1)
+    i18n (0.6.9)
+    nanoc (3.6.7)
+      cri (~> 2.3)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.8.0)
+    rack (1.5.2)
+    rack-rewrite (1.5.0)
+    rake (10.1.1)
+    sass (3.2.14)
+    sshkit (1.3.0)
+      net-scp (>= 1.1.2)
+      net-ssh
+      term-ansicolor
+    systemu (2.5.2)
+    term-ansicolor (1.2.2)
+      tins (~> 0.8)
+    tins (0.13.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  capistrano
+  compass
+  compass_twitter_bootstrap
+  htmlentities
+  nanoc
+  rack
+  rack-rewrite
+  sass
+  systemu
