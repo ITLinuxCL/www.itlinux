@@ -837,6 +837,10 @@ div.map-section {
 	margin-top: 40px;
 }
 
+div.zimbra-section {
+	background: transparent url(/img/zimbra_banner.png) center 0 no-repeat;
+}
+
 /* Section Featured */
 section.featured {
 	background: #F0F0ED;
@@ -1710,4 +1714,8 @@ a.scroll-to-top:hover {
 a.scroll-to-top.visible {
 	filter: alpha(opacity=75);
 	opacity: 0.75;
+}
+
+.zimbra-training-topics li {
+	margin-bottom: 10px;
 }
