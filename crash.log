@@ -1,0 +1,191 @@
+Crashlog created at 2014-05-06 13:57:46 -0400
+
+===== MESSAGE:
+
+RuntimeError: command exited with a nonzero status code 255 (command: rsync -glpPrtvz --exclude=".hg" --exclude=".svn" --exclude=".git" output/ pbruna@172.16.0.2:/var/www/html/www.itlinux.cl)
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/extra/deployers/rsync.rb:60:in `run_shell_cmd'
+  1. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/extra/deployers/rsync.rb:50:in `run'
+  2. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/commands/deploy.rb:89:in `run'
+  3. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  4. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  5. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  6. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/command_runner.rb:13:in `call'
+  7. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command_dsl.rb:185:in `block in runner'
+  8. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:298:in `call'
+  9. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:298:in `run_this'
+  10. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:251:in `run'
+  11. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:264:in `run'
+  12. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli.rb:59:in `block in run'
+  13. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  14. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  15. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli.rb:57:in `run'
+  16. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/bin/nanoc:19:in `<top (required)>'
+  17. /Users/pbruna/.rbenv/versions/2.1.1/bin/nanoc:23:in `load'
+  ... 20 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.7 © 2007-2013 Denis Defreyne.
+Running ruby 2.1.1 (2014-02-24) on x86_64-darwin13.0 with RubyGems 2.2.2.
+
+===== SYSTEM INFORMATION:
+
+Darwin iMac-de-los-BruGa-3.local 13.1.0 Darwin Kernel Version 13.1.0: Wed Apr  2 23:52:02 PDT 2014; root:xnu-2422.92.1~2/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  bundler 1.6.2
+  capistrano 3.1.0
+  chunky_png 1.2.9
+  colored 1.2
+  compass 0.12.2
+  compass_twitter_bootstrap 2.3.1
+  cri 2.4.1
+  fssm 0.2.10
+  htmlentities 4.3.1
+  i18n 0.6.9
+  nanoc 3.6.7
+  net-scp 1.1.2
+  net-ssh 2.8.0
+  rack 1.5.2
+  rack-rewrite 1.5.0
+  rake 10.1.1
+  sass 3.2.14
+  sshkit 1.3.0
+  systemu 2.5.2
+  term-ansicolor 1.2.2
+  tins 0.13.2
+
+===== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-j3YZK5/Render"
+BUNDLE_BIN_PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/bin/bundle"
+BUNDLE_GEMFILE => "/Users/pbruna/Proyectos/ITLinux/Web/www.itlinux.cl/Gemfile"
+COLORFGBG => "7;0"
+COMMAND_MODE => "unix2003"
+DYLD_INSERT_LIBRARIES => "/usr/lib/libimckit.dylib"
+GEM_HOME => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0"
+GEM_PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0:/Users/pbruna/.gem/ruby/2.1.0"
+GREP_COLOR => "1;32"
+GREP_OPTIONS => "--color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn"
+HOME => "/Users/pbruna"
+ITERM_PROFILE => "Default"
+ITERM_SESSION_ID => "w1t0p0"
+LANG => "es_ES.UTF-8"
+LC_CTYPE => "es_ES.UTF-8"
+LESS => "-R"
+LOGNAME => "pbruna"
+LSCOLORS => "Gxfxcxdxbxegedabagacad"
+PAGER => "less"
+PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/bin:/Users/pbruna/.rbenv/versions/2.1.1/bin:/usr/local/Cellar/rbenv/0.4.0/libexec:/Users/pbruna/.rbenv/shims:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/pbruna/bin:/Users/pbruna/.rvm/bin"
+PWD => "/Users/pbruna/Proyectos/ITLinux/Web/www.itlinux.cl"
+RBENV_DIR => "/Users/pbruna/Proyectos/ITLinux/Web/www.itlinux.cl"
+RBENV_HOOK_PATH => ":/Users/pbruna/.rbenv/rbenv.d:/usr/local/etc/rbenv.d:/etc/rbenv.d:/usr/lib/rbenv/hooks"
+RBENV_ROOT => "/Users/pbruna/.rbenv"
+RBENV_VERSION => "2.1.1"
+RUBYLIB => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/lib"
+RUBYOPT => "-rbundler/setup"
+SECURITYSESSIONID => "186a4"
+SHELL => "/bin/zsh"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-idYo6u/Listeners"
+TERM => "xterm"
+TERM_PROGRAM => "iTerm.app"
+TMPDIR => "/var/folders/tj/_tmnwrsn4gv9rqjplklc6l7m0000gn/T/"
+USER => "pbruna"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:86\n"
+__CHECKFIX1436934 => "1"
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    capistrano (3.1.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (~> 1.3)
+    chunky_png (1.2.9)
+    colored (1.2)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass_twitter_bootstrap (2.3.1)
+      compass
+    cri (2.4.1)
+      colored (>= 1.2)
+    fssm (0.2.10)
+    htmlentities (4.3.1)
+    i18n (0.6.9)
+    nanoc (3.6.7)
+      cri (~> 2.3)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.8.0)
+    rack (1.5.2)
+    rack-rewrite (1.5.0)
+    rake (10.1.1)
+    sass (3.2.14)
+    sshkit (1.3.0)
+      net-scp (>= 1.1.2)
+      net-ssh
+      term-ansicolor
+    systemu (2.5.2)
+    term-ansicolor (1.2.2)
+      tins (~> 0.8)
+    tins (0.13.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  capistrano
+  compass
+  compass_twitter_bootstrap
+  htmlentities
+  nanoc
+  rack
+  rack-rewrite
+  sass
+  systemu
+
+===== LOAD PATHS:
+
+  0. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib
+  1. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/systemu-2.5.2/lib
+  2. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-rewrite-1.5.0/lib
+  3. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-1.5.2/lib
+  4. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib
+  5. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/htmlentities-4.3.1/lib
+  6. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib
+  7. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/compass_twitter_bootstrap-2.3.1/lib
+  8. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/compass-0.12.2/lib
+  9. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.2.14/lib
+  10. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/fssm-0.2.10/lib
+  11. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/colored-1.2/lib
+  12. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/chunky_png-1.2.9/lib
+  13. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/capistrano-3.1.0/lib
+  14. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sshkit-1.3.0/lib
+  15. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/term-ansicolor-1.2.2/lib
+  16. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/tins-0.13.2/lib
+  17. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/net-scp-1.1.2/lib
+  18. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/net-ssh-2.8.0/lib
+  19. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/i18n-0.6.9/lib
+  20. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rake-10.1.1/lib
+  21. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/lib
+  22. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/site_ruby/2.1.0
+  23. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/site_ruby/2.1.0/x86_64-darwin13.0
+  24. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/site_ruby
+  25. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/vendor_ruby/2.1.0
+  26. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/vendor_ruby/2.1.0/x86_64-darwin13.0
+  27. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/vendor_ruby
+  28. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/2.1.0
+  29. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/2.1.0/x86_64-darwin13.0
