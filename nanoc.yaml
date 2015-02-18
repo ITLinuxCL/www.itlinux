@@ -83,7 +83,7 @@ watcher:
 deploy:
   public:
     kind: rsync
-    dst: "pbruna@172.16.0.2:/var/www/html/www.itlinux.cl"
+    dst: "pbruna@www.zboxapp.com:/var/zpanel/hostdata/itlinux/public_html/itlinux_cl"
 
 
 base_url: http://www.itlinux.cl
