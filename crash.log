@@ -1,8 +1,8 @@
-Crashlog created at 2014-05-19 17:31:10 -0400
+Crashlog created at 2015-03-31 19:03:17 -0300
 
 ===== MESSAGE:
 
-RuntimeError: command exited with a nonzero status code 255 (command: rsync -glpPrtvz --exclude=".hg" --exclude=".svn" --exclude=".git" output/ pbruna@172.16.0.2:/var/www/html/www.itlinux.cl)
+RuntimeError: command exited with a nonzero status code 255 (command: rsync -glpPrtvz --exclude=".hg" --exclude=".svn" --exclude=".git" output/ pbruna@www.zboxapp.com:/var/zpanel/hostdata/itlinux/public_html/itlinux_cl)
 
 ===== COMPILATION STACK:
 
@@ -37,7 +37,7 @@ Running ruby 2.1.1 (2014-02-24) on x86_64-darwin13.0 with RubyGems 2.2.2.
 
 ===== SYSTEM INFORMATION:
 
-Darwin iMac-de-los-BruGa-3.local 13.2.0 Darwin Kernel Version 13.2.0: Thu Apr 17 23:03:13 PDT 2014; root:xnu-2422.100.13~1/RELEASE_X86_64 x86_64
+Darwin iMac-de-los-BruGa.local 14.3.0 Darwin Kernel Version 14.3.0: Mon Mar 16 23:12:31 PDT 2015; root:xnu-2782.20.48~4/RELEASE_X86_64 x86_64
 
 ===== INSTALLED GEMS:
 
@@ -65,26 +65,27 @@ Darwin iMac-de-los-BruGa-3.local 13.2.0 Darwin Kernel Version 13.2.0: Thu Apr 17
 
 ===== ENVIRONMENT:
 
-Apple_PubSub_Socket_Render => "/tmp/launch-NhN0Ea/Render"
+Apple_PubSub_Socket_Render => "/private/tmp/com.apple.launchd.Hohr9GM15H/Render"
 BUNDLE_BIN_PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/bin/bundle"
 BUNDLE_GEMFILE => "/Users/pbruna/Proyectos/ITLinux/Web/www.itlinux.cl/Gemfile"
 COLORFGBG => "7;0"
 COMMAND_MODE => "unix2003"
-DYLD_INSERT_LIBRARIES => "/usr/lib/libimckit.dylib"
+DISPLAY => "/private/tmp/com.apple.launchd.TUNUdTnMcu/org.macosforge.xquartz:0"
 GEM_HOME => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0"
 GEM_PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0:/Users/pbruna/.gem/ruby/2.1.0"
-GREP_COLOR => "1;32"
-GREP_OPTIONS => "--color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn"
+GOPATH => "/Users/pbruna/Proyectos/go"
+GOROOT => "/usr/local/go"
 HOME => "/Users/pbruna"
 ITERM_PROFILE => "Default"
-ITERM_SESSION_ID => "w0t4p0"
+ITERM_SESSION_ID => "w0t2p0"
 LANG => "es_ES.UTF-8"
 LC_CTYPE => "es_ES.UTF-8"
 LESS => "-R"
 LOGNAME => "pbruna"
 LSCOLORS => "Gxfxcxdxbxegedabagacad"
 PAGER => "less"
-PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/bin:/Users/pbruna/.rbenv/versions/2.1.1/bin:/usr/local/Cellar/rbenv/0.4.0/libexec:/Users/pbruna/.rbenv/shims:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/pbruna/bin:/Users/pbruna/.rvm/bin"
+PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/bin:/Users/pbruna/.rbenv/versions/2.1.1/bin:/usr/local/Cellar/rbenv/0.4.0/libexec:/Users/pbruna/.rbenv/shims:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/pbruna/bin:/Users/pbruna/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local/go/bin:/Users/pbruna/Proyectos/go/bin"
+POSTGRESPATH => "/Applications/Postgres.app/Contents/Versions/9.4"
 PWD => "/Users/pbruna/Proyectos/ITLinux/Web/www.itlinux.cl"
 RBENV_DIR => "/Users/pbruna/Proyectos/ITLinux/Web/www.itlinux.cl"
 RBENV_HOOK_PATH => ":/Users/pbruna/.rbenv/rbenv.d:/usr/local/etc/rbenv.d:/etc/rbenv.d:/usr/lib/rbenv/hooks"
@@ -92,16 +93,17 @@ RBENV_ROOT => "/Users/pbruna/.rbenv"
 RBENV_VERSION => "2.1.1"
 RUBYLIB => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/lib"
 RUBYOPT => "-rbundler/setup"
-SECURITYSESSIONID => "186a4"
+SECURITYSESSIONID => "186a6"
 SHELL => "/bin/zsh"
 SHLVL => "1"
-SSH_AUTH_SOCK => "/tmp/launch-DukqCF/Listeners"
+SSH_AUTH_SOCK => "/private/tmp/com.apple.launchd.VZdmpXxnYr/Listeners"
 TERM => "xterm"
 TERM_PROGRAM => "iTerm.app"
 TMPDIR => "/var/folders/tj/_tmnwrsn4gv9rqjplklc6l7m0000gn/T/"
 USER => "pbruna"
-__CF_USER_TEXT_ENCODING => "0x1F5:0:86\n"
-__CHECKFIX1436934 => "1"
+XPC_FLAGS => "0x0"
+XPC_SERVICE_NAME => "0"
+__CF_USER_TEXT_ENCODING => "0x1F5:0x0:0x8"
 
 ===== GEMFILE.LOCK:
 
