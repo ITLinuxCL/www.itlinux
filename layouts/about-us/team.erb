@@ -4,7 +4,7 @@
 		<div class="row">
 
 			<ul class="team-list">
-				
+
 				<%= render "about-us/person",
 					name: "Patricio Bruna",
 					title: "CEO y Fundador",
@@ -24,6 +24,15 @@
 					facebook: "https://www.facebook.com/daniel.eugenin",
 					linkedin: "http://cl.linkedin.com/in/danieleugenin"
  				 %>
+				 <%= render "about-us/person",
+					 name: "Andrés Gallarado",
+					 title: "Gerente Comercial",
+					 picture: "andres-gallardo-gray.jpg",
+					 description: "Ingeniero Comercial con experiencia en Gestión Comercial, Dirección y Desarrollo de Negocios. CEO de #{link_to '@ZBoxApp', 'http://www.zbox.cl'}.",
+					 twitter: nil,
+				 	facebook: nil,
+				 	linkedin: "https://www.linkedin.com/pub/andrés-gallardo-fernández/36/8a7/b0a/en"
+					%>
 				<%= render "about-us/person",
 					name: "Miguel Angel Coa",
 					title: "Ingeniero de Proyectos",
@@ -42,15 +51,6 @@
   					facebook: nil,
   					linkedin: "http://cl.linkedin.com/pub/nadia-valencia/83/a57/238"
    				 %>
-  				<%= render "about-us/person",
-  					name: "Nicolás Fuenzalida",
-  					title: "Ingeniero de Proyectos",
-  					picture: "nicolas-fuenzalida-gray.png",
-  					description: "Soy el intermediario entre la silla y el computador, maestro cervecero frustrado. Me demoré 1 mes en ver todos los capítulos Breaking Bad.",
-  					twitter: "https://twitter.com/nico01f",
- 					facebook: nil,
- 					linkedin: "https://www.linkedin.com/pub/nicolas-fuenzalida-ortega/8"
-  				 %>
    				<%= render "about-us/person",
    					name: "Elizabeth Arriagada",
    					title: "Finanzas y Asistente Gerencia",
