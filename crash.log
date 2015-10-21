@@ -1,8 +1,8 @@
-Crashlog created at 2015-03-31 19:03:17 -0300
+Crashlog created at 2015-10-01 10:41:20 -0300
 
 ===== MESSAGE:
 
-RuntimeError: command exited with a nonzero status code 255 (command: rsync -glpPrtvz --exclude=".hg" --exclude=".svn" --exclude=".git" output/ pbruna@www.zboxapp.com:/var/zpanel/hostdata/itlinux/public_html/itlinux_cl)
+RuntimeError: dst requires no trailing slash
 
 ===== COMPILATION STACK:
 
@@ -10,25 +10,24 @@ RuntimeError: command exited with a nonzero status code 255 (command: rsync -glp
 
 ===== STACK TRACE:
 
-  0. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/extra/deployers/rsync.rb:60:in `run_shell_cmd'
-  1. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/extra/deployers/rsync.rb:50:in `run'
-  2. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/commands/deploy.rb:89:in `run'
-  3. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/command_runner.rb:14:in `block in call'
-  4. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  5. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  6. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/command_runner.rb:13:in `call'
-  7. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command_dsl.rb:185:in `block in runner'
-  8. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:298:in `call'
-  9. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:298:in `run_this'
-  10. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:251:in `run'
-  11. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:264:in `run'
-  12. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli.rb:59:in `block in run'
-  13. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
-  14. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
-  15. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli.rb:57:in `run'
-  16. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/bin/nanoc:19:in `<top (required)>'
-  17. /Users/pbruna/.rbenv/versions/2.1.1/bin/nanoc:23:in `load'
-  ... 20 more lines omitted. See full crash log for details.
+  0. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/extra/deployers/rsync.rb:43:in `run'
+  1. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/commands/deploy.rb:89:in `run'
+  2. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  3. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  4. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  5. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/command_runner.rb:13:in `call'
+  6. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command_dsl.rb:185:in `block in runner'
+  7. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:298:in `call'
+  8. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:298:in `run_this'
+  9. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:251:in `run'
+  10. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/cri-2.4.1/lib/cri/command.rb:264:in `run'
+  11. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli.rb:59:in `block in run'
+  12. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  13. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  14. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/lib/nanoc/cli.rb:57:in `run'
+  15. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/nanoc-3.6.7/bin/nanoc:19:in `<top (required)>'
+  16. /Users/pbruna/.rbenv/versions/2.1.1/bin/nanoc:23:in `load'
+  ... 19 more lines omitted. See full crash log for details.
 
 ===== VERSION INFORMATION:
 
@@ -37,11 +36,11 @@ Running ruby 2.1.1 (2014-02-24) on x86_64-darwin13.0 with RubyGems 2.2.2.
 
 ===== SYSTEM INFORMATION:
 
-Darwin iMac-de-los-BruGa.local 14.3.0 Darwin Kernel Version 14.3.0: Mon Mar 16 23:12:31 PDT 2015; root:xnu-2782.20.48~4/RELEASE_X86_64 x86_64
+Darwin iMac-de-los-BruGa.local 14.5.0 Darwin Kernel Version 14.5.0: Wed Jul 29 02:26:53 PDT 2015; root:xnu-2782.40.9~1/RELEASE_X86_64 x86_64
 
 ===== INSTALLED GEMS:
 
-  bundler 1.6.2
+  bundler 1.10.6
   capistrano 3.1.0
   chunky_png 1.2.9
   colored 1.2
@@ -65,19 +64,22 @@ Darwin iMac-de-los-BruGa.local 14.3.0 Darwin Kernel Version 14.3.0: Mon Mar 16 2
 
 ===== ENVIRONMENT:
 
-Apple_PubSub_Socket_Render => "/private/tmp/com.apple.launchd.Hohr9GM15H/Render"
-BUNDLE_BIN_PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/bin/bundle"
+Apple_PubSub_Socket_Render => "/private/tmp/com.apple.launchd.rUXBfoeGvo/Render"
+BUNDLE_BIN_PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.10.6/bin/bundle"
 BUNDLE_GEMFILE => "/Users/pbruna/Proyectos/ITLinux/Web/www.itlinux.cl/Gemfile"
 COLORFGBG => "7;0"
 COMMAND_MODE => "unix2003"
-DISPLAY => "/private/tmp/com.apple.launchd.TUNUdTnMcu/org.macosforge.xquartz:0"
+DISPLAY => "/private/tmp/com.apple.launchd.2rWd0fO3SG/org.macosforge.xquartz:0"
+DOCKER_CERT_PATH => "/Users/pbruna/.boot2docker/certs/boot2docker-vm"
+DOCKER_HOST => "tcp://192.168.59.103:2376"
+DOCKER_TLS_VERIFY => "1"
 GEM_HOME => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0"
 GEM_PATH => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0:/Users/pbruna/.gem/ruby/2.1.0"
 GOPATH => "/Users/pbruna/Proyectos/go"
 GOROOT => "/usr/local/go"
 HOME => "/Users/pbruna"
 ITERM_PROFILE => "Default"
-ITERM_SESSION_ID => "w0t2p0"
+ITERM_SESSION_ID => "w3t2p0"
 LANG => "es_ES.UTF-8"
 LC_CTYPE => "es_ES.UTF-8"
 LESS => "-R"
@@ -91,12 +93,12 @@ RBENV_DIR => "/Users/pbruna/Proyectos/ITLinux/Web/www.itlinux.cl"
 RBENV_HOOK_PATH => ":/Users/pbruna/.rbenv/rbenv.d:/usr/local/etc/rbenv.d:/etc/rbenv.d:/usr/lib/rbenv/hooks"
 RBENV_ROOT => "/Users/pbruna/.rbenv"
 RBENV_VERSION => "2.1.1"
-RUBYLIB => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/lib"
+RUBYLIB => "/Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.10.6/lib"
 RUBYOPT => "-rbundler/setup"
-SECURITYSESSIONID => "186a6"
+SECURITYSESSIONID => "186a5"
 SHELL => "/bin/zsh"
 SHLVL => "1"
-SSH_AUTH_SOCK => "/private/tmp/com.apple.launchd.VZdmpXxnYr/Listeners"
+SSH_AUTH_SOCK => "/private/tmp/com.apple.launchd.IAW7BNLBOZ/Listeners"
 TERM => "xterm"
 TERM_PROGRAM => "iTerm.app"
 TMPDIR => "/var/folders/tj/_tmnwrsn4gv9rqjplklc6l7m0000gn/T/"
@@ -182,7 +184,7 @@ DEPENDENCIES
   18. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/net-ssh-2.8.0/lib
   19. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/i18n-0.6.9/lib
   20. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rake-10.1.1/lib
-  21. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.6.2/lib
+  21. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/bundler-1.10.6/lib
   22. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/site_ruby/2.1.0
   23. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/site_ruby/2.1.0/x86_64-darwin13.0
   24. /Users/pbruna/.rbenv/versions/2.1.1/lib/ruby/site_ruby
