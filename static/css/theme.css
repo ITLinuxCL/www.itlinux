@@ -841,6 +841,11 @@ div.zimbra-section {
 	background: transparent url(/img/zimbra_banner.png) center 0 no-repeat;
 }
 
+div.thanks-section {
+	background: transparent url(/img/thank-you-banner.jpg) center 0 no-repeat;
+	margin-top: 0px;
+}
+
 /* Section Featured */
 section.featured {
 	background: #F0F0ED;
