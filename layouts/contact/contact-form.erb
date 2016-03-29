@@ -1,18 +1,18 @@
 <div class="col-md-6">
-	
+
 	<%= render "contact/flash-messages"%>
 
 	<h2 class="short">Formulario de <strong>contacto</strong></h2>
-	<form action="" id="contactForm" type="post">
+	<form action="https://formkeep.com/f/9427fc03e42d" accept-charset="UTF-8" id="contactForm" type="post">
 		<div class="row">
 			<div class="form-group">
 				<div class="col-md-6">
 					<label>Tu nombre *</label>
-					<input type="text" value="" data-msg-required="Por favor ingresa tu nombre." maxlength="100" class="form-control" name="name" id="name">
+					<input type="text" value="" data-msg-required="Por favor ingresa tu nombre." maxlength="100" class="form-control" name="name" id="name" required>
 				</div>
 				<div class="col-md-6">
 					<label>Tu correo *</label>
-					<input type="email" value="" data-msg-required="Por favor ingresa tu correo." data-msg-email="Ingresa una direccion correcta" maxlength="100" class="form-control" name="email" id="email">
+					<input type="email" value="" data-msg-required="Por favor ingresa tu correo." data-msg-email="Ingresa una direccion correcta" maxlength="100" class="form-control" name="email" id="email" required>
 				</div>
 			</div>
 		</div>
@@ -20,7 +20,7 @@
 			<div class="form-group">
 				<div class="col-md-12">
 					<label>Asunto</label>
-					<input type="text" value="" data-msg-required="Por favor indica un asunto." maxlength="100" class="form-control" name="subject" id="subject">
+					<input type="text" value="" data-msg-required="Por favor indica un asunto." maxlength="100" class="form-control" name="subject" id="subject" required>
 				</div>
 			</div>
 		</div>
@@ -28,7 +28,7 @@
 			<div class="form-group">
 				<div class="col-md-12">
 					<label>Mensaje *</label>
-					<textarea maxlength="5000" data-msg-required="Por favor ingresa tu mensaje." rows="10" class="form-control" name="message" id="message"></textarea>
+					<textarea maxlength="5000" data-msg-required="Por favor ingresa tu mensaje." rows="10" class="form-control" name="message" id="message" required></textarea>
 				</div>
 			</div>
 		</div>
